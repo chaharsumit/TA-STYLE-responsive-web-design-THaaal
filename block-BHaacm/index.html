@@ -1,0 +1,99 @@
+<!--writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="assets/stylesheet/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <a href="#" class="brand">
+        <img src="assets/media/logo.png" alt="brand-logo" class="brand-image">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu flex">
+          <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+  <section class="article">
+    <article>
+      <div class="container flex">
+        <div class="article-content wd-45">
+          <h1 class="section-heading">What is Lorem Ipsum?</h1>
+          <p class="para-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt fugiat rem quaerat architecto sunt, aliquam officia nobis voluptas maxime dolorum perferendis nihil, assumenda quibusdam quisquam repudiandae exercitationem. Voluptate similique minus voluptatum eum impedit odio non explicabo labore? Quis quasi quisquam amet voluptatibus commodi, libero optio vero quidem placeat porro!</p>
+          <button class="btn btn-lg">Read More</button>
+        </div>
+        <img src="assets/media/01.png" alt="pencils" class="article-image wd-45">
+      </div>
+    </article>
+  </section>
+  <section class="blog">
+    <h2 class="blog-heading">Our Blog</h3>
+    <div class="container flex">
+      <article class="container-article wd-30">
+        <img src="assets/media/02.png" alt="cup and books" class="article-image">
+        <h4 class="article-heading">Why do we use it?</h4>
+        <p class="para-text article-text">It is a long establsihed fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution.</p>
+        <button class="btn btn-article">Read More</button>
+      </article>
+      <article class="container-article wd-30">
+        <img src="assets/media/02.png" alt="cup and books" class="article-image">
+        <h4 class="article-heading">Why do we use it?</h4>
+        <p class="para-text article-text">It is a long establsihed fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution.</p>
+        <button class="btn btn-article">Read More</button>
+      </article>
+      <article class="container-article wd-30">
+        <img src="assets/media/02.png" alt="cup and books" class="article-image">
+        <h4 class="article-heading">Why do we use it?</h4>
+        <p class="para-text article-text">It is a long establsihed fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution.</p>
+        <button class="btn btn-article">Read More</button>
+      </article>
+    </div>
+  </section>
+  <footer class="footer"> 
+    <div class="container flex">
+      <small>&copy; AltCampus</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav-menu flex">
+          <li><a href="#" class="footer-icon"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#" class="footer-icon"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
