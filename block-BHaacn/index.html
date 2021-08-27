@@ -1,0 +1,238 @@
+<!--writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/stylesheet/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex navbar">
+      <a href="#" class="brand">
+        <img src="assets/media/logo.svg" alt="brand logo" class="brand-image">
+      </a>
+      <label class="bars" for="toggle">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input id="toggle" type="checkbox">
+      <nav class="nav">
+        <ul class="nav-menu flex">
+          <li class="nav-item"><a href="#" class="nav-item-link">home</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">about</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">services</a></li>
+          <li class="nav-item"><a href="#" class="nav-item-link">contact</a></li>
+          <li class="nav-item"><a href="#"><button class="btn btn-sm">join us</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container flex">
+        <article class="hero-info wd-58">
+          <h1 class="hero-heading">web developer conference <span class="danger">2020</span></h1>
+          <p class="hero-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+          <button class="btn btn-sm">register now</button>
+        </article>
+        <img src="assets/media/hero.png" alt="hero-image" class="hero-image wd-20">
+      </div>
+    </section>
+    <section class="about section">
+      <div class="container flex">
+        <article class="wd-40">
+          <img src="assets/media/about.png" alt="about image">
+        </article>
+        <article class="wd-50">
+          <h2 class="heading">about the event</h2>
+          <p class="para-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+          <button class="btn btn-sm">know more</button>
+        </article>
+      </div>
+    </section>
+    <section class="why-us section">
+      <h3 class="heading section-heading">
+        why should you join
+      </h3>
+      <div class="container flex">
+        <article class="article-card wd-30">
+          <div class="article-number"><span class="danger">1</span></div>
+          <h4 class="heading">Network</h4>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+        </article>
+        <article class="article-card wd-30">
+          <div class="article-number"><span class="danger">2</span></div>
+          <h4 class="heading">Network</h4>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+        </article>
+        <article class="article-card wd-30">
+          <div class="article-number"><span class="danger">3</span></div>
+          <h4 class="heading">Network</h4>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+        </article>
+      </div>
+    </section>
+    <section class="schedule section">
+      <h3 class="heading section-heading">Schedule</h3>
+      <div class="container flex">
+          <article class="schedule-container flex">
+            <div class="side-date wd-15 active">
+              <p>06 sept</p>
+            </div>
+            <div class="wd-20">
+              <img src="assets/media/schedule-01.jpg" alt="schedule">
+            </div>
+            <div class="flex wd-48">
+              <h3 class="heading">digital world event conversation</h3>
+              <p>TypeLorem Ipsum has been the industry's leading standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+            </article>
+          </article> 
+          <article class="schedule-container flex">
+            <div class="side-date wd-15">
+              <p>07 sept</p>
+            </div>
+            <div class="wd-20">
+              <img src="assets/media/schedule-02.jpg" alt="schedule" class="schedule-image">
+            </div>
+            <div class="flex wd-48">
+              <h3 class="heading">digital world event conversation</h3>
+              <p>TypeLorem Ipsum has been the industry's leading standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+            </article>
+          </article> 
+          <article class="schedule-container flex">
+            <div class="side-date wd-15">
+              <p>08 sept</p>
+            </div>
+            <div class="wd-20">
+              <img src="assets/media/schedule-03.jpg" alt="schedule" class="schedule-image">
+            </div>
+            <div class="flex wd-48">
+              <h3 class="heading">digital world event conversation</h3>
+              <p>TypeLorem Ipsum has been the industry's leading standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+            </article>
+          </article> 
+          <article class="schedule-container flex">
+            <div class="side-date last-date wd-15">
+              <p>09 sept</p>
+            </div>
+            <div class="wd-20">
+              <img src="assets/media/schedule-04.jpg" alt="schedule" class="schedule-image">
+            </div>
+            <div class="flex wd-48">
+              <h3 class="heading">digital world event conversation</h3>
+              <p>TypeLorem Ipsum has been the industry's leading standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+            </article>
+          </article> 
+          <button class="btn btn-sm">download schedule</button>
+      </div>
+    </section>
+    <section class="conference section">
+      <div class="container flex">
+        <article class="conference-card wd-25">
+          <img src="assets/media/speaker.png" alt="speakers">
+          <h3 class="heading">20+</h3>
+          <p>Great Speakers</p>
+        </article>
+        <article class="conference-card active wd-25">
+          <img src="assets/media/idea.png" alt="speakers">
+          <h3 class="heading">20+</h3>
+          <p>Great Speakers</p>
+        </article>
+        <article class="conference-card wd-25">
+          <img src="assets/media/sponsor.png" alt="speakers">
+          <h3 class="heading">20+</h3>
+          <p>Great Speakers</p>
+        </article>
+        <article class="conference-card wd-25">
+          <img src="assets/media/participants.png" alt="speakers">
+          <h3 class="heading">20+</h3>
+          <p>Great Speakers</p>
+        </article>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <img src="assets/media/banner.png" alt="banner" class="banner-image">
+      </div>
+      <div class="play-button">
+        <i class="fas fa-play"></i>
+      </div>
+    </section>
+    <section class="section news">
+      <h3 class="heading section-heading">our latest news</h3>
+      <div class="container flex">
+        <article class="news-container wd-30">
+          <img src="assets/media/news-01.png" alt="news image">
+          <h5 class="news-heading">How to build a great portfolio as a beginner developer</h5>
+          <p class="text-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+          <a href="#" class="news-link">read more</a>
+        </article>
+        <article class="news-container wd-30">
+          <img src="assets/media/news-02.png" alt="news image">
+          <h5 class="news-heading">How to build a great portfolio as a beginner developer</h5>
+          <p class="text-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+          <a href="#" class="news-link">read more</a>
+        </article>
+        <article class="news-container wd-30">
+          <img src="assets/media/news-03.png" alt="news image">
+          <h5 class="news-heading">How to build a great portfolio as a beginner developer</h5>
+          <p class="text-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book.</p>
+          <a href="#" class="news-link">read more</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container flex footer-top">
+      <a href="#" class="brand-logo">
+        <img src="assets/media/footer-logo.png" alt="logo" class="footer-brand">
+      </a>
+      <nav class="footer-nav flex">
+        <h5 class="footer-nav-heading">Quick Links</h5>
+        <ul class="footer-menu flex">
+          <li class="footer-nav-item"><a href="#" class="text-light">program</a></li>
+          <li class="footer-nav-item"><a href="#" class="text-light">about us</a></li>
+          <li class="footer-nav-item"><a href="#" class="text-light">contact</a></li>
+          <li class="footer-nav-item"><a href="#" class="text-light">services</a></li>
+        </ul>
+      </nav>
+      <div class="follow flex">
+        <h5 class="footer-nav-heading">follow us</h5>
+        <div class="follow-icon">
+          <i class="fab fa-facebook-square text-light"></i>
+          <i class="fab fa-twitter-square text-light"></i>
+        </div>
+      </div>
+    </div>
+    <small class="text-light copyright">&copy; AltCampus Services Pvt. Ltd, 2018-present.</small>
+  </footer>
+</body>
+</html>
